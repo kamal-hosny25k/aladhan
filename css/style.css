@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=League+Spartan:wght@300;400;500;600&family=Outfit:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&family=Rubik:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    background: rgb(36,16,0);
+background: linear-gradient(161deg, rgba(36,16,0,1) 0%, rgba(45,45,247,1) 100%, rgba(0,212,255,1) 100%);
+    height: 100%;
+    color: #fff;
+    direction: rtl;
+}
+
+.continer{
+    padding: 80px 20px;
+    width: 100%;
+    height: 100vh
+}
+.continer .title{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+
+}
+.continer .title h1{
+    font-size: 100px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+.continer .title h3{
+    font-size: 20px;
+    font-weight: 300;    
+    
+}
+.continer .title span{
+    position: absolute;
+    background-color: #54368e;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+}
+.continer .cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.continer .cards .card{
+    background-color: #fff;
+    width: 175px;
+    height: 180px;
+    position: relative;
+}
+.continer .cards .card .up{
+    background: rgb(0,175,160);
+    background: linear-gradient(161deg, rgba(0,175,160,1) 0%, rgba(45,45,247,1) 100%, rgba(0,212,255,1) 100%);
+    height: 20%;
+    padding: 5px 15px;
+    font-size: 20px;
+}
+.continer .cards .card .down{
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+    position: absolute;
+    font-size: 50px;
+    left: 50%;
+    top: 42%;
+    transform: translateX(-50%);
+}
+.continer .menu{
+    padding: 50px 0;
+    width: 100%;
+}
+.continer .menu select{
+    padding: 11px 45px;
+    font-size: 20px;
+    border-radius: 3px;
+    outline: none;
+    position: relative;
+    right: 50%;
+    transform: translateX(50%);
+}
+.continer .menu option{
+    border-radius: none;
+    background-color: #27194f;
+    color: #fff;
+     
+}
+
+@media (max-width:1240px) {
+    .continer{
+        height: 100%
+    }
+}
+@media (max-width:576px) {
+    .continer .title span{
+        display: none;
+    }
+    .continer .title{
+        text-align: center;
+    }
+    .continer .cards .card{
+        text-align: center;
+    }
+    .continer .cards{
+        gap: 30px 5px;
+    }
+    .continer .cards .card{
+        width: 170px;
+        height: 180px;
+    }
+}

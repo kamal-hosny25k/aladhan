@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأذان</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/moon.png">
+</head>
+<body>
+    <div class="continer">
+        <div class="title">
+            <h1 id="name-city">القاهرة</h1>
+            <h3 id="to-day"></h3>
+            <span></span>
+        </div>
+        <div class="cards">
+
+            <!-- Start 1 -->
+            <div class="card" id="cards">
+                <div class="up">الفجْر</div>
+                <div class="down" id="fajrId"></div>
+            </div>
+            <!-- End 1 -->
+            <!-- Start 2 -->
+            <div class="card" id="cards">
+                <div class="up">الشروق</div>
+                <div class="down" id="sunriseId"></div>
+            </div>
+            <!-- End 2 -->
+            <!-- Start 3 -->
+            <div class="card" id="cards">
+                <div class="up">الظُّهْر</div>
+                <div class="down" id="dhuhrId"></div>
+            </div>
+            <!-- End 3 -->
+            <!-- Start 4 -->
+            <div class="card" id="cards">
+                <div class="up">العَصر</div>
+                <div class="down" id="asrId"></div>
+            </div>
+            <!-- End 4 -->
+            <!-- Start 5 -->
+            <div class="card" id="cards">
+                <div class="up">المَغرب</div>
+                <div class="down" id="maghribId"></div>
+            </div>
+            <!-- End 5 -->
+            <!-- Start 6 -->
+            <div class="card" id="cards">
+                <div class="up">العِشاء</div>
+                <div class="down" id="ishaId"></div>
+            </div>
+            <!-- End 6 -->
+
+        </div>
+        <div class="menu">
+            <select name="" id="select-city">
+            </select>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js"></script>
+</html>
